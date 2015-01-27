@@ -7,7 +7,7 @@ try:
 except:
   print("could not import simulation")
   
-import job_configurations as jc
+import kelvin_cell_tools.job_configurations as jc
 import time
 try:
   from simulation import *
