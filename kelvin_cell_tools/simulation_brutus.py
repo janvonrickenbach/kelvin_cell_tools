@@ -671,10 +671,10 @@ class job:
             self.init_application = application_tmb_init_local(self,kwargs["transat_init_executable"])
             print("Warning Initial conditions with single block code not supported")
          elif kwargs["transat_version"] == "wc_python":
-            self.application = application_transat_local(self,kwargs["transat_executable"])
+            self.application = application_wc_python(self,kwargs["transat_executable"])
             print("Warning Initial conditions with single block code not supported")
          else:
-            self.application = application_wc_python(self,kwargs["transat_executable"])
+            self.application = application_transat_local(self,kwargs["transat_executable"])
 
 
 #      print '==============================================='
