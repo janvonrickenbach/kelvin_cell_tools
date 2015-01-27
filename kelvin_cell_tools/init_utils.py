@@ -1,6 +1,6 @@
 def write_inital_conditions(folder,massfraction,velocity,temperature):
 
-    import initial_condition_writer as ini
+    import kelvin_cell_tools.initial_condition_writer as ini
     writer = ini.initalconditions_writer()
     writer.add_variable("uvelocity",velocity)
     writer.add_variable("temperature",temperature)
