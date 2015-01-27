@@ -2,7 +2,11 @@ import os
 import subprocess as sp
 import shutil as sh
 import pickle as pic
-import utils as ut
+try:
+  import utils as ut
+except:
+  print("could not import simulation")
+  
 import job_configurations as jc
 import time
 try:
